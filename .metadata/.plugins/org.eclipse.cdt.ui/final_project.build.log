@@ -1,0 +1,25 @@
+19:18:47 **** Build of configuration Debug for project final_project ****
+make all 
+Building file: ../Keypad.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"Keypad.d" -MT"Keypad.o" -c -o "Keypad.o" "../Keypad.c"
+In file included from ../micro_config.h:22,
+                 from ../keypad.h:17,
+                 from ../Keypad.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Keypad.c
+ 
+Building file: ../Mc1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=8000000UL -MMD -MP -MF"Mc1.d" -MT"Mc1.o" -c -o "Mc1.o" "../Mc1.c"
+In file included from ../micro_config.h:22,
+                 from ../lcd.h:18,
+                 from ../Mc1.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Mc1.c: In function 'main':
+../Mc1.c:28: error: incompatible types in assignment
+make: *** [Mc1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+19:18:48 Build Failed. 2 errors, 2 warnings. (took 1s.91ms)
+
